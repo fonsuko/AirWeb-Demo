@@ -58,6 +58,9 @@ a {
   font-family: Hind, sans-serif;
   color: #81848f;
   outline: 0;
+  text-decoration: none;
+  position: none;
+  font-size: none;
 }
 
 a:focus, a:hover, a:active {
