@@ -13,6 +13,8 @@ util.inherits(Gulp, Orchestrator);
 
 Gulp.prototype.task = Gulp.prototype.add;
 Gulp.prototype.run = function() {
+
+
   // `run()` is deprecated as of 3.5 and will be removed in 4.0
   // Use task dependencies instead
 
@@ -20,6 +22,7 @@ Gulp.prototype.run = function() {
   var tasks = arguments.length ? arguments : ['default'];
 
   this.start.apply(this, tasks);
+  this.start.apply(for,tasks);//no more
 };
 
 Gulp.prototype.src = vfs.src;
